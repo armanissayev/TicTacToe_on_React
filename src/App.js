@@ -2,6 +2,7 @@
 import './App.css';
 import './index.css';
 import { useState, useEffect } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 let order = 0;
 
@@ -231,6 +232,7 @@ function App() {
     }
     return (
         <>
+            <SpeedInsights/>
             <Board matrix = {matrix} makePlayerMove = {makePlayerMove} playerMove = {playerMove}/>
             <Messages matrix = {matrix} playerMove = {playerMove} gameStatus = {gameStatus} />
             <Buttons gameStatus = {gameStatus} startGame = {startGame} />
