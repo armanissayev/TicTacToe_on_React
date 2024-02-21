@@ -231,12 +231,16 @@ function App() {
         return;
     }
     return (
-        <>
+        <div className = 'display'>
             <SpeedInsights/>
-            <Board matrix = {matrix} makePlayerMove = {makePlayerMove} playerMove = {playerMove}/>
-            <Messages matrix = {matrix} playerMove = {playerMove} gameStatus = {gameStatus} />
-            <Buttons gameStatus = {gameStatus} startGame = {startGame} />
-        </>
+            <div className = 'leftBlock'>
+                <Board matrix = {matrix} makePlayerMove = {makePlayerMove} playerMove = {playerMove}/>
+            </div>
+            <div className = 'rightBlock'>
+                <Messages matrix = {matrix} playerMove = {playerMove} gameStatus = {gameStatus} />
+                <Buttons gameStatus = {gameStatus} startGame = {startGame} />
+            </div>
+        </div>
     );
 }
 
