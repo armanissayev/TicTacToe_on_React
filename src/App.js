@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-import './App.css';
+import './Mobile.css';
+import './Desktop.css';
 import './index.css';
 import { useState, useEffect } from 'react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
@@ -132,7 +133,7 @@ function Messages({matrix, playerMove, gameStatus}) {
         if (playerWon({matrix, playerMove})) {
             message = "You won the game!\nLet's do it again!";
         } else if (botWon({matrix, playerMove})) {
-            message = "You lost it :(\nBut it's never late to come back!";
+            message = "You lost it :(\n But it's never late to come back!";
         } else {
             message = "It's a tie! Let's play again to see who is stronger!";
         }
