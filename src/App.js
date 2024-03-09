@@ -46,7 +46,6 @@ function Square({makePlayerMove, playerMove, value, i, j}) {
             <div className = {Class} > {value} </div>
         );
     }
-    
 }
 
 function Board({matrix, makePlayerMove, playerMove}) {
